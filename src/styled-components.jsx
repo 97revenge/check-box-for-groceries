@@ -1,3 +1,5 @@
+import styled from 'styled-components';
+
 const root = styled.container`
   background: transparent;
   border-radius: 3px;
@@ -7,4 +9,8 @@ const root = styled.container`
   padding: 0.25em 1em;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+`;
+
+const Headline = styled.h1`
+  color: green;
 `;

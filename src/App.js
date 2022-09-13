@@ -1,5 +1,5 @@
 import React from 'react';
-import Che from './components/Example.jsx';
+import CheckList from './components/CheckList.jsx';
 import './style.css';
 import styled from 'styled-components';
 
@@ -8,8 +8,6 @@ function App() {
         div >
         <
         CheckList / >
-
-
         <
         /div>
 

@@ -4,7 +4,12 @@ import './style.css';
 import styled from 'styled-components';
 
 export default function App() {
-  return <Example />;
+    return ( <
+        div >
+        carlos <
+        /div>
+
+    )
 }
 
 // um Check List de Mercado com uma Api chamada store groceries .

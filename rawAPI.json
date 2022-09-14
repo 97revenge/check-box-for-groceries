@@ -1,0 +1,30 @@
+[{
+        "id": 1,
+        "product": "Arroz 🍙",
+        "price": "$19,98"
+    },
+    {
+        "id": 2,
+        "product": "Banana 🍌 ",
+        "price": "$5,45"
+    },
+
+    {
+        "id": 3,
+        "product": "Peito de frango 🐔",
+        "price": "$19,98"
+    },
+    {
+        "id": 4,
+        "product": "Agua Mineral 🥛",
+        "price": "$1,79"
+    },
+    {
+        "id": 5,
+        "product": "Nozes sem casca 🍚",
+        "price": "$19,98"
+    }
+
+
+
+]

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Headline from '../styled-components/HeadLine'
 import IntroHeadline from '../styled-components/IntroHeadline'
 import TittleHeadline from '../styled-components/TitleHeadline'
@@ -7,19 +7,36 @@ import HeadingText from '../styled-components/HeadingText'
 import ListDisplay from '../styled-components/ListDisplay'
 import FooterList from '../styled-components/FooterList'
 import TextFooterList from '../styled-components/TextFooterList'
+import axios from 'axios'
 
 
-// import axios from 'axios';
+
+
+const api = axios.create({
+  baseURL: `https://public.je-apis.com/application/onlinestatus`
+})
 
 function CheckList() {
   const [checked, setChecked] = useState([])
-  const checkLists = [
-    'Pizza 🍕 ',
-    'Hamburguer 🍔',
-    ' Glizzy 🌭',
-    ' Ice-Cream🍿',
-    ' Bacon 🥓',
-  ]
+  const [post, setPost] = useState(null);
+
+  useEffect(() => {
+    api.get('/')
+    .then((res) =>{
+      console.log(res.data)
+    })
+
+
+  })
+
+
+  // const checkLists = [
+  //   'Pizza 🍕 ',
+  //   'Hamburguer 🍔',
+  //   ' Glizzy 🌭',
+  //   ' Ice-Cream🍿',
+  //   ' Bacon 🥓',
+  // ]
 
   const handleCheck = (event) => {
     var updatedList = [...checked] // rest operator : buscando todos os itens para o primeiro resultado

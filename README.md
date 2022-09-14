@@ -1,5 +1,5 @@
 
-# A beautiful check-box for groceries
+ > # A dinamic check-box for groceries 🍱
 
 ### A checklist list created with React, Axios & Styled-components. 
 <br>
@@ -26,13 +26,16 @@ install my-project with npm
 <br>
 
 
-## Project's goal 🛤
+## Project's goal 🎆
 
-⚡️ Develop an application entirely in JavaScript
+⚡️ Develop an application entirely in JavaScript ( *HTML* and also *CSS*)
 
-⚡️ work with hooks
+⚡️ work with `useState` hook and debug a business rule after project completion
 
-⚡️ fetch APIs with  `axios.get`
+⚡️ fetch the store groceries API with  `axios.get`
+
+⚡️ handling events with components
+
 
 
 
@@ -88,4 +91,4 @@ Insira um gif ou um link de alguma demonstração -->
 
 
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/react-b85ues)
+[My Linkedin 🆗](https://www.linkedin.com/in/matheushpb/)

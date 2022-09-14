@@ -4,10 +4,10 @@
 ### A checklist list created with React, Axios & Styled-components. 
 <br>
 
-<!-- 
-## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here) -->
+
+
+![image](https://user-images.githubusercontent.com/80254945/190216041-97ac2365-efae-47dc-b18b-1c7bca72e9e4.png) 
 
 
 ## Installation

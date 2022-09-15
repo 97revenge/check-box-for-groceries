@@ -52,7 +52,7 @@ function CheckList() {
 
   const checkedItems = checked.length
     ? checked.reduce((total, item) => {
-        return total +  item + '|      '
+        return total + '|      ' + item 
       })
     : 'Sem Itens... 😢' 
 

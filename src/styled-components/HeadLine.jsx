@@ -10,7 +10,7 @@ background : #F0FFFF;
   height: 595.85px; 
  left: 700px;
  top: 200px;
- box-shadow: 0px 3px 30px; 
+ box-shadow: 0px 3px 10px; 
  rgba(0, 0, 0, 0.25);
 border-radius: 28px;
 

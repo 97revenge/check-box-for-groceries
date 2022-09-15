@@ -59,13 +59,19 @@ const checkedLists = fetch('./')
 
   return (
     <>
-      <Headline color="black">
+ <div class='box'>
+  <div class='wave -one'></div>
+  <div class='wave -two'></div>
+  <div class='wave -three'></div>
+</div>
+      <Headline>
         {' '}
         <IntroHeadline>
-          <TittleHeadline>Esta é a sua Check-List 🥗</TittleHeadline>
+          <TittleHeadline>⁜ Esta é a sua Check-List ⁜</TittleHeadline>
         </IntroHeadline>
         <Heading>
-          <HeadingText> Este sao os produtos</HeadingText>
+          <HeadingText> Produtos 👇  </HeadingText>
+          
           <></>
         </Heading>
         <ListDisplay>
@@ -78,7 +84,7 @@ const checkedLists = fetch('./')
         </ListDisplay>
         <FooterList>
           <TextFooterList>
-           <strong> Itens Comfirmados : </strong>
+           <strong> Itens Comfirmados ✅: </strong>
 
           </TextFooterList>
      
@@ -90,6 +96,8 @@ const checkedLists = fetch('./')
 
 
       </Headline>
+     
+      
     </>
   )
 }

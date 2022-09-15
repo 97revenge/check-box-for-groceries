@@ -7,8 +7,9 @@
 
 
 
-![image](https://user-images.githubusercontent.com/80254945/190411524-831c17a0-43c5-4088-ab86-5d9fece86025.png)
 
+
+<img align="center" src='https://user-images.githubusercontent.com/80254945/190411524-831c17a0-43c5-4088-ab86-5d9fece86025.png'>
 
 ## Installation
 

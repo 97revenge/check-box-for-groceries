@@ -18,7 +18,7 @@ function App() {
     )
 }
 
-// um Check List de Mercado com uma Api chamada store groceries .
+
 
 
 export default App;

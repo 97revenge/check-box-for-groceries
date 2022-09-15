@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+// import { FooterList, Heading, HeadingText, IntroHeadline,  ListDisplay, TextFooterList, TittleHeadline , Headline} from './../styled-components/index';
 import Headline from '../styled-components/HeadLine'
 import IntroHeadline from '../styled-components/IntroHeadline'
 import TittleHeadline from '../styled-components/TitleHeadline'
@@ -38,21 +39,21 @@ const checkedLists = fetch('./')
   //   ' Bacon 🥓',
   // ]
 
-  const handleCheck = (event) => {
-    var updatedList = [...checked] // rest operator : buscando todos os itens para o primeiro resultado
-    if (event.target.checked) {
-      updatedList = [...checked, event.target.value]
-    } else {
-      updatedList.splice(checked.indexOf(event.target.value), 1)
-    }
-    setChecked(updatedList)
-  }
+  // const handleCheck = (event) => {
+  //   var updatedList = [...checked] // rest operator : buscando todos os itens para o primeiro resultado
+  //   if (event.target.checked) {
+  //     updatedList = [...checked, event.target.value]
+  //   } else {
+  //     updatedList.splice(checked.indexOf(event.target.value), 1)
+  //   }
+  //   setChecked(updatedList)
+  // }
 
-  const checkedItems = checked.length
-    ? checked.reduce((total, item) => {
-        return total + '' + <br></br> + item
-      })
-    : ''
+  // const checkedItems = checked.length
+  //   ? checked.reduce((total, item) => {
+  //       return total + '' + <br></br> + item
+  //     })
+  //   : ''
 
   return (
     <>

@@ -7,7 +7,7 @@
 
 
 
-![image](https://user-images.githubusercontent.com/80254945/190216041-97ac2365-efae-47dc-b18b-1c7bca72e9e4.png) 
+![image](https://user-images.githubusercontent.com/80254945/190411524-831c17a0-43c5-4088-ab86-5d9fece86025.png)
 
 
 ## Installation

@@ -13,9 +13,7 @@ import axios from 'axios'
 
 
 
-const api = axios.create({
-  baseURL: `https://raw.githubusercontent.com/97revenge/check-box-for-groceries/main/rawAPI.json`
-})
+
 
 function CheckList() {
 
@@ -23,9 +21,10 @@ function CheckList() {
   const [post, setPost] = useState(null);
 
   useEffect(() => {
-    api.get('/')
+    axios.get('https://raw.githubusercontent.com/97revenge/check-box-for-groceries/main/rawAPI.json')
     .then((res) =>{
-      console.log(res.data)
+      setPost(res.data);
+      console.log(data);
     })
 
 
@@ -40,21 +39,23 @@ const checkedLists = fetch('./')
   //   ' Bacon 🥓',
   // ]
 
-  // const handleCheck = (event) => {
-  //   var updatedList = [...checked] // rest operator : buscando todos os itens para o primeiro resultado
-  //   if (event.target.checked) {
-  //     updatedList = [...checked, event.target.value]
-  //   } else {
-  //     updatedList.splice(checked.indexOf(event.target.value), 1)
-  //   }
-  //   setChecked(updatedList)
-  // }
 
-  // const checkedItems = checked.length
-  //   ? checked.reduce((total, item) => {
-  //       return total + '' + <br></br> + item
-  //     })
-  //   : ''
+
+  const handleCheck = (event) => {
+    var updatedList = [...checked] // rest operator : buscando todos os itens para o primeiro resultado
+    if (event.target.checked) {
+      updatedList = [...checked, event.target.value]
+    } else {
+      updatedList.splice(checked.indexOf(event.target.value), 1)
+    }
+    setChecked(updatedList)
+  }
+
+  const checkedItems = checked.length
+    ? checked.reduce((total, item) => {
+        return total + '' + <br></br> + item
+      })
+    : ''
 
   return (
     <>
@@ -68,11 +69,11 @@ const checkedLists = fetch('./')
           <></>
         </Heading>
         <ListDisplay>
-          <ul>Pizza 🍕 </ul>
-          <ul>Hamburguer 🍔</ul>
-          <ul>Glizzy 🌭</ul>
-          <ul>Ice-Cream🍿</ul>
-          <ul>Bacon 🥓</ul>
+          <ul> <input type="checkbox" name="Pizza 🍕" id="" />  🍕 </ul>
+          <ul> <input type="checkbox" name="Hamburguer 🍔" id="" /> 🍔</ul>
+          <ul><input type="checkbox" name="Glizzy 🌭" id="" />🌭</ul>
+          <ul><input type="checkbox" value="Ice-Cream🍿" />🍿</ul>
+          <ul><input type="checkbox" name="Bacon 🥓" id="" /> 🥓</ul>
           
         </ListDisplay>
         <FooterList>

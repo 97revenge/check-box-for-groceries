@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+// import { FooterList, Heading, HeadingText, IntroHeadline,  ListDisplay, TextFooterList, TittleHeadline , Headline} from './../styled-components/index';
 import Headline from '../styled-components/HeadLine'
 import IntroHeadline from '../styled-components/IntroHeadline'
 import TittleHeadline from '../styled-components/TitleHeadline'
@@ -12,18 +13,18 @@ import axios from 'axios'
 
 
 
-const api = axios.create({
-  baseURL: `https://raw.githubusercontent.com/97revenge/check-box-for-groceries/main/rawAPI.json`
-})
+
 
 function CheckList() {
+
   const [checked, setChecked] = useState([])
   const [post, setPost] = useState(null);
 
   useEffect(() => {
-    api.get('/')
+    axios.get('https://raw.githubusercontent.com/97revenge/check-box-for-groceries/main/rawAPI.json')
     .then((res) =>{
-      console.log(res.data)
+      setPost(res.data);
+      console.log(data);
     })
 
 
@@ -37,6 +38,8 @@ const checkedLists = fetch('./')
   //   ' Ice-Cream🍿',
   //   ' Bacon 🥓',
   // ]
+
+
 
   const handleCheck = (event) => {
     var updatedList = [...checked] // rest operator : buscando todos os itens para o primeiro resultado
@@ -66,11 +69,11 @@ const checkedLists = fetch('./')
           <></>
         </Heading>
         <ListDisplay>
-          <ul>Pizza 🍕 </ul>
-          <ul>Hamburguer 🍔</ul>
-          <ul>Glizzy 🌭</ul>
-          <ul>Ice-Cream🍿</ul>
-          <ul>Bacon 🥓</ul>
+          <ul> <input type="checkbox" name="Pizza 🍕" id="" />  🍕 </ul>
+          <ul> <input type="checkbox" name="Hamburguer 🍔" id="" /> 🍔</ul>
+          <ul><input type="checkbox" name="Glizzy 🌭" id="" />🌭</ul>
+          <ul><input type="checkbox" value="Ice-Cream🍿" />🍿</ul>
+          <ul><input type="checkbox" name="Bacon 🥓" id="" /> 🥓</ul>
           
         </ListDisplay>
         <FooterList>
@@ -91,4 +94,4 @@ const checkedLists = fetch('./')
   )
 }
 
-export default CheckList
+export default CheckList ; 

@@ -18,6 +18,7 @@ const api = axios.create({
 })
 
 function CheckList() {
+
   const [checked, setChecked] = useState([])
   const [post, setPost] = useState(null);
 
@@ -92,4 +93,4 @@ const checkedLists = fetch('./')
   )
 }
 
-export default CheckList
+export default CheckList ; 

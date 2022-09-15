@@ -13,7 +13,7 @@ import axios from 'axios'
 
 
 const api = axios.create({
-  baseURL: `https://public.je-apis.com/application/onlinestatus`
+  baseURL: `https://raw.githubusercontent.com/97revenge/check-box-for-groceries/main/rawAPI.json`
 })
 
 function CheckList() {
@@ -29,7 +29,7 @@ function CheckList() {
 
   })
 
-
+const checkedLists = fetch('./')
   // const checkLists = [
   //   'Pizza 🍕 ',
   //   'Hamburguer 🍔',

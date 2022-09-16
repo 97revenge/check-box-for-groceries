@@ -15,13 +15,38 @@ import {
 function CheckList() {
   const [checked, setChecked] = useState([])
 
-  const checkLists = [
-    'Arroz 🍙 ',
-    'Banana 🍌',
-    'Peito de frango 🐔',
-    ' Agua Mineral 🥛',
-    ' Nozes  🍚',
+  const rawCheckLists = [
+    {
+      id: 1,
+      product: 'Arroz 🍙',
+      price: '$19,98',
+    },
+    {
+      id: 2,
+      product: 'Banana 🍌 ',
+      price: '$5,45',
+    },
+
+    {
+      id: 3,
+      product: 'Peito de frango 🐔',
+      price: '$19,98',
+    },
+    {
+      id: 4,
+      product: 'Agua Mineral 🥛',
+      price: '$1,79',
+    },
+    {
+      id: 5,
+      product: 'Nozes sem casca 🍚',
+      price: '$19,98',
+    },
   ]
+
+  const checkLists = rawCheckLists.map((item) => item.product)
+
+  // seria bastante interessante se tivessemos um Hover em `item.product` de `item.price`, trazendo as mesmas regras de negocios que estamos usando.
 
   const handleCheck = (event) => {
     var updatedList = [...checked] // rest operator : buscando todos os itens para o primeiro resultado

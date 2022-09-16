@@ -44,7 +44,7 @@ function CheckList() {
     },
   ]
 
-  const checkLists = rawCheckLists.map((item) => item.product)
+  const checkLists = rawCheckLists.map((item) => item.product) // {checkedItems}
 
   // seria bastante interessante se tivessemos um Hover em `item.product` de `item.price`, trazendo as mesmas regras de negocios que estamos usando.
 

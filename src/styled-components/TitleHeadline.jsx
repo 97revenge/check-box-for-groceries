@@ -1,8 +1,6 @@
 import styled from 'styled-components'
 
-
-
-const TittleHeadline = styled.p`
+export const TittleHeadline = styled.p`
 width: 420px;
 height: 19px;
 font-weight: 700;
@@ -18,5 +16,3 @@ color: #2F4F4F
 
 
 `
-
-export default TittleHeadline; 

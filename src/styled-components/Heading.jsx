@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-const Heading = styled.div`
+export  const Heading = styled.div`
   position: absolute;
   width: 200px;
   height: 10px;
@@ -12,4 +12,4 @@ const Heading = styled.div`
   
 `
 
-export default Heading
+

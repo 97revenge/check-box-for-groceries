@@ -1,18 +1,16 @@
 import React, { useState } from 'react'
 
-// import { FooterList, Heading, HeadingText, IntroHeadline,  ListDisplay, TextFooterList, TittleHeadline , Headline} from './../styled-components/index';
-// import styled
-import Headline from '../styled-components/HeadLine'
-import IntroHeadline from '../styled-components/IntroHeadline'
-import TittleHeadline from '../styled-components/TitleHeadline'
-import Heading from '../styled-components/Heading'
-import HeadingText from '../styled-components/HeadingText'
-import ListDisplay from '../styled-components/ListDisplay'
-import FooterList from '../styled-components/FooterList'
-import TextFooterList from '../styled-components/TextFooterList'
-import Item from '../styled-components/Item'
-// import styled
-import axios from 'axios'
+import {
+  FooterList,
+  Heading,
+  HeadingText,
+  IntroHeadline,
+  ListDisplay,
+  TextFooterList,
+  TittleHeadline,
+  Headline,
+  Item,
+} from './../styled-components/index'
 
 function CheckList() {
   const [checked, setChecked] = useState([])

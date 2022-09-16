@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 
-const ListContent = styled.div`
+ export const ListContent = styled.div`
 
 
 

@@ -1,5 +1,7 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
+
 // import { FooterList, Heading, HeadingText, IntroHeadline,  ListDisplay, TextFooterList, TittleHeadline , Headline} from './../styled-components/index';
+// import styled
 import Headline from '../styled-components/HeadLine'
 import IntroHeadline from '../styled-components/IntroHeadline'
 import TittleHeadline from '../styled-components/TitleHeadline'
@@ -9,24 +11,12 @@ import ListDisplay from '../styled-components/ListDisplay'
 import FooterList from '../styled-components/FooterList'
 import TextFooterList from '../styled-components/TextFooterList'
 import Item from '../styled-components/Item'
+// import styled
 import axios from 'axios'
 
 function CheckList() {
   const [checked, setChecked] = useState([])
-  const [post, setPost] = useState(null)
 
-  useEffect(() => {
-    axios
-      .get(
-        'https://raw.githubusercontent.com/97revenge/check-box-for-groceries/main/rawAPI.json',
-      )
-      .then((res) => {
-        setPost(res.data)
-        console.log(post)
-      })
-  }, [setPost])
-
-  // const checkedLists = fetch('./')
   const checkLists = [
     'Arroz 🍙 ',
     'Banana 🍌',
@@ -34,11 +24,6 @@ function CheckList() {
     ' Agua Mineral 🥛',
     ' Nozes  🍚',
   ]
-  // const checkLists = {setPost} ; 
-
-
-
-
 
   const handleCheck = (event) => {
     var updatedList = [...checked] // rest operator : buscando todos os itens para o primeiro resultado
@@ -52,9 +37,9 @@ function CheckList() {
 
   const checkedItems = checked.length
     ? checked.reduce((total, item) => {
-        return total + '|      ' + item 
+        return total + '|      ' + item
       })
-    : 'Sem Itens... 😢' 
+    : 'Sem Itens... 😢'
 
   return (
     <>
@@ -64,26 +49,21 @@ function CheckList() {
         <div class="wave -three"></div>
       </div>
       <Headline>
-        {' '}
         <IntroHeadline>
           <TittleHeadline>⁜ Esta é a sua Check-List ⁜</TittleHeadline>
         </IntroHeadline>
         <Heading>
-          <HeadingText> Produtos 👇 </HeadingText>
+          <HeadingText> 🔅 Produtos 🔅 </HeadingText>
 
           <></>
         </Heading>
         <ListDisplay>
-          {/* block here */}
-        {checkLists.map((list, index)=> (
-          <Item key={index}>
-            <input type="checkbox" value={list} onChange={handleCheck} />
-            <span> {list}</span>
-          </Item>
-          
-        ))}
-
-
+          {checkLists.map((list, index) => (
+            <Item key={index}>
+              <input type="checkbox" value={list} onChange={handleCheck} />
+              <span> {list}</span>
+            </Item>
+          ))}
         </ListDisplay>
         <FooterList>
           <TextFooterList>

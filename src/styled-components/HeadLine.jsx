@@ -1,8 +1,6 @@
-import styled from "styled-components"
+import styled from 'styled-components'
 
-
-
-const Headline = styled.div`
+export const Headline = styled.div`
 background : #F0FFFF;
   color: #A9A9A9;
   position: absolute; 
@@ -16,9 +14,3 @@ border-radius: 28px;
 
 
 `
-
-
-
-
-export default Headline ; 
-

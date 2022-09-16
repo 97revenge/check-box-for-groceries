@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-const IntroHeadline = styled.div`
+export const IntroHeadline = styled.div`
   display: flex;
   flex-direction: row;
   alignt-items: center;
@@ -20,4 +20,4 @@ const IntroHeadline = styled.div`
 `
 
 
-export default IntroHeadline ; 
+ 

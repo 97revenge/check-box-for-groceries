@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 
-const HeadingText = styled.p`
+export const HeadingText = styled.p`
 font-weight: 300;
 font-size: 23px;
 line-height: 0px;
@@ -20,4 +20,3 @@ color: #2F4F4F
 
 `
 
-export default HeadingText ; 

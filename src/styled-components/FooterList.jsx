@@ -2,7 +2,7 @@ import styled from "styled-components"
 
 
 
-const FooterList = styled.div`
+export const FooterList = styled.div`
 position: absolute;
 width: 420px;
 height: 1px;
@@ -14,4 +14,3 @@ background: #DDDDDD;
 
 `
 
-export default FooterList ; 

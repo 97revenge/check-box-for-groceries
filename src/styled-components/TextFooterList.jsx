@@ -1,8 +1,8 @@
 import styled from 'styled-components'
 
-const TextFooterList = styled.p`
+export const TextFooterList = styled.p`
   flex-direction: column;
-  
+
   padding: 10px 10px 15px 20px;
 
   letter-spacing: 0.354167px;
@@ -11,5 +11,3 @@ const TextFooterList = styled.p`
 
   color: #2f4f4f;
 `
-
-export default TextFooterList

@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import Background from './Background'
 
 import {
   FooterList,
@@ -39,17 +40,21 @@ function CheckList() {
     },
     {
       id: 5,
-      product: 'Nozes sem casca 🍚',
+      product: 'Nozes  🍚',
       price: '$19,98',
     },
   ]
 
   const checkLists = rawCheckLists.map((item) => item.product) // {checkedItems}
+  const priceLists = rawCheckLists.map((item) => item.price) // hover for checkedItems
+  // console.log(checkLists.map((currentValue) => currentValue.slice(-1)))
 
-  // seria bastante interessante se tivessemos um Hover em `item.product` de `item.price`, trazendo as mesmas regras de negocios que estamos usando.
+  function sliceThis(num) {
+    return num.slice(-1)
+  }
 
   const handleCheck = (event) => {
-    var updatedList = [...checked] // rest operator : buscando todos os itens para o primeiro resultado
+    var updatedList = [...checked]
     if (event.target.checked) {
       updatedList = [...checked, event.target.value]
     } else {
@@ -66,11 +71,8 @@ function CheckList() {
 
   return (
     <>
-      <div class="box">
-        <div class="wave -one"></div>
-        <div class="wave -two"></div>
-        <div class="wave -three"></div>
-      </div>
+      <Background />
+
       <Headline>
         <IntroHeadline>
           <TittleHeadline>⁜ Esta é a sua Check-List ⁜</TittleHeadline>
